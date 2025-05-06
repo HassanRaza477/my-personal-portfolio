@@ -13,8 +13,7 @@ interface Project {
 }
 
 export default function ProjectsSection() {
-  const [isLoading, setIsLoading] = useState(true);
-
+  const [,setIsLoading] = useState(true);
   useEffect(() => {
     const timer = setTimeout(() => setIsLoading(false), 2000);
     return () => clearTimeout(timer);
@@ -30,7 +29,7 @@ export default function ProjectsSection() {
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
+            {projects.map((project,) => (
               <motion.div
                 key={project.title}
                 initial={{ opacity: 0, y: 50 }}

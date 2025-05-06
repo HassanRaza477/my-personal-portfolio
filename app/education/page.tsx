@@ -17,7 +17,7 @@ export default function EducationPage() {
               My Educational Journey
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto px-4">
-              From classroom learning to practical implementations - Here's my academic evolution
+              From classroom learning to practical implementations  Here is my academic evolution
             </p>
           </motion.div>
         </section>
@@ -94,7 +94,6 @@ const educationTimeline = [
     degree: "Inter in Computer Science",
     description: "Currently pursuing a degree in Computer Science",
     icon: TrophyIcon
-   
   },
   {
     year: "2021-2023",
@@ -115,12 +114,12 @@ const courses = [
   {
     title: "Digital Marketing Specialization",
     institution: "Bano Qabil",
-    description: "SEO, social media, and analytics strategies."
+    description: "SEO social media and analytics strategies."
   },
   {
     title: "Frontend Developer Bootcamp",
     institution: "Governer House",
-    description: "HTML, CSS, JavaScript, React, TypeScript, Next.js and modern UI/UX practices."
+    description: "HTML CSS React TypeScript Next.js and modern UI/UX practices."
   },
   {
     title: "Artifical Intelligence",
@@ -130,6 +129,6 @@ const courses = [
   {
     title: "CIT",
     institution: "ICS",
-    description: "A comprehensive course covering computer fundamentals, ms-office, and programming basics."
+    description: "A comprehensive course covering computer fundamentals ms-office and programming basics."
   }
 ];
