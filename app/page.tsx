@@ -11,7 +11,7 @@ import { useEffect, useState } from 'react';
 import ContactForm from './contact/page';
 import AboutPage from './about/page';
 import EducationPage from './education/page';
-import HasanImage from '@/public/images/hasan.jpg';
+import HasanImage from '@/public/images/client1.webp';
 import Footer from '@/components/ui/footer';
 
 export default function Home() {

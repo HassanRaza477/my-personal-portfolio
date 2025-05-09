@@ -24,20 +24,24 @@ export default function EducationPage() {
 
         {/* Education Timeline */}
         <section className="py-8 sm:py-12">
-          <div className="relative max-w-4xl mx-auto">
-            <div className="absolute left-1/2 w-0.5 sm:w-1 bg-gray-200 dark:bg-gray-700 h-full transform -translate-x-1/2" />
+          <div className="relative max-w-4xl mx-auto px-4">
+            {/* Vertical Line */}
+            <div className="absolute left-1/2 w-0.5 bg-gray-200 dark:bg-gray-700 h-full transform -translate-x-1/2" />
 
             {educationTimeline.map((item, index) => (
               <motion.div
                 key={item.year}
                 initial={{ opacity: 0, x: index % 2 === 0 ? 50 : -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                className={`mb-8 sm:mb-12 flex flex-col sm:flex-${index % 2 === 0 ? 'row' : 'row-reverse'} items-center`}
+                transition={{ duration: 0.5 }}
+                className={`mb-10 flex flex-col sm:flex-row items-center ${index % 2 !== 0 ? 'sm:flex-row-reverse' : ''
+                  }`}
               >
+                {/* Left or Right Card */}
                 <div className="w-full sm:w-5/12 p-2 sm:p-4">
                   <div className="p-4 sm:p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg">
                     <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
-                      <div className="p-1.5 sm:p-2 bg-purple-100 dark:bg-purple-900/50 rounded-lg">
+                      <div className="p-2 bg-purple-100 dark:bg-purple-900/50 rounded-lg">
                         <item.icon className="w-5 h-5 sm:w-6 sm:h-6 text-purple-600 dark:text-purple-400" />
                       </div>
                       <span className="text-sm sm:text-base text-gray-500 dark:text-gray-400">{item.year}</span>
@@ -50,7 +54,8 @@ export default function EducationPage() {
                   </div>
                 </div>
 
-                <div className="w-full sm:w-2/12 flex justify-center my-4 sm:my-0">
+                {/* Center Dot */}
+                <div className="w-full sm:w-2/12 flex justify-center items-center my-4 sm:my-0">
                   <div className="w-6 h-6 sm:w-8 sm:h-8 bg-purple-600 dark:bg-purple-400 rounded-full flex items-center justify-center">
                     {index % 2 === 0 ? (
                       <BookOpenIcon className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
@@ -60,11 +65,13 @@ export default function EducationPage() {
                   </div>
                 </div>
 
+                {/* Spacer for alignment */}
                 <div className="hidden sm:block sm:w-5/12" />
               </motion.div>
             ))}
           </div>
         </section>
+
 
         {/* Courses Section */}
         <section className="py-10 sm:py-14 bg-white dark:bg-gray-900 px-8">
@@ -101,7 +108,7 @@ const educationTimeline = [
     degree: "Matriculation",
     description: "Completed Matriculation with a focus on Science subjects",
     icon: AcademicCapIcon
-   
+
   },
 ];
 

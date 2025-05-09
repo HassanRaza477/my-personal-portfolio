@@ -4,7 +4,7 @@ import { CodeBracketIcon, HeartIcon } from '@heroicons/react/24/outline';
 import ThemeToggle from '@/components/ui/Theme';
 import SocialLinks from '@/components/ui/SocialLinks';
 import Image from 'next/image';
-import HasanImage from '@/public/images/hasan.jpg';
+import HasanImage from '@/public/images/client1.webp';
 
 export default function AboutPage() {
   return (
@@ -22,7 +22,7 @@ export default function AboutPage() {
               About <span className="text-purple-600 dark:text-purple-400">Hasan Raza</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl mb-6 text-gray-600 dark:text-gray-300">
-              I am a passionate and results-driven Frontend Developer, Digital Marketer, and Python Developer with a strong foundation in web technologies and data-driven marketing. I specialize in building modern, responsive, and user-friendly web applications using technologies like Next.js, React, Tailwind CSS, and TypeScript.
+              I am a passionate and results driven Frontend Developer Digital Marketer and Python Developer with a strong foundation in web technologies and data driven marketing. I specialize in building modern responsive and user friendly web applications using technologies like Next.js React Tailwind CSS and TypeScript.
             </p>
             <div className="flex justify-center lg:justify-start items-center gap-4 flex-wrap">
               <SocialLinks />
